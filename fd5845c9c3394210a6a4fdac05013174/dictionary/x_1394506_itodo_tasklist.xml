@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0089cd4dc3394210a6a4fdac05013157" label="TaskList" max_length="40" name="x_1394506_itodo_tasklist" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="200" name="description" type="string"/>
+        <element label="Done" mandatory="true" max_length="40" name="done" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Due Date" mandatory="true" max_length="40" name="due_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical" value="critical"/>
+                <element inactive_on_update="false" label="Emergency" value="emergency"/>
+                <element inactive_on_update="false" label="High" value="high"/>
+                <element inactive_on_update="false" label="Medium" value="medium"/>
+                <element inactive_on_update="false" label="Normal" value="normal"/>
+                <element inactive_on_update="false" label="Urgent" value="urgent"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Task Name" mandatory="true" max_length="50" name="task_name" type="string"/>
+    </element>
+</database>
